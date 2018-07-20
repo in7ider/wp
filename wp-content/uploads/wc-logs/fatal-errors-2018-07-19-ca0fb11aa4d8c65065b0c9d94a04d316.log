@@ -1,0 +1,11 @@
+2018-07-19T14:24:54+00:00 CRITICAL Uncaught Exception: Invalid data store. in C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-data-store.php:101
+Stack trace:
+#0 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(136): WC_Data_Store->__construct('product')
+#1 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-product-factory.php(81): WC_Data_Store::load('product')
+#2 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-product-factory.php(32): WC_Product_Factory::get_product_type(43)
+#3 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\wc-product-functions.php(64): WC_Product_Factory->get_product(43, Array)
+#4 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(800): wc_get_product(43)
+#5 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(286): WC_Form_Handler::add_to_cart_action('')
+#6 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#7 C:\OSPanel\domains\W
+

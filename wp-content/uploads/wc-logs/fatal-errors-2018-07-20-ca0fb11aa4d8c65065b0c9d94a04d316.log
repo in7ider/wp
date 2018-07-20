@@ -1,0 +1,11 @@
+2018-07-20T07:02:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function iconic_login_redirect(), 1 passed in C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php on line 288 and exactly 2 expected in C:\OSPanel\domains\WP\wp-content\themes\twentyseventeen-woocommerce-child\functions.php:110
+Stack trace:
+#0 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(288): iconic_login_redirect('/my-account/')
+#1 C:\OSPanel\domains\WP\wp-includes\plugin.php(203): WP_Hook->apply_filters('/my-account/', Array)
+#2 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-form-handler.php(1062): apply_filters('woocommerce_log...', '/my-account/', Object(WP_User))
+#3 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(286): WC_Form_Handler::process_login('')
+#4 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#5 C:\OSPanel\domains\WP\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#6 C:\OSPanel\domains\WP\wp-settings.php(471): do_action('wp_loaded')
+#7 C:\OSPanel\domains\WP
+
