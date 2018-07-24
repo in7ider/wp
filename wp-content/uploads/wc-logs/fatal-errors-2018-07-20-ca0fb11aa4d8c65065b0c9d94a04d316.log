@@ -9,3 +9,39 @@ Stack trace:
 #6 C:\OSPanel\domains\WP\wp-settings.php(471): do_action('wp_loaded')
 #7 C:\OSPanel\domains\WP
 
+2018-07-20T14:48:17+00:00 CRITICAL Uncaught Exception: Invalid data store. in C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-data-store.php:107
+Stack trace:
+#0 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(136): WC_Data_Store->__construct('movies')
+#1 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\wc-order-functions.php(327): WC_Data_Store::load('movies')
+#2 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\wc-order-functions.php(301): wc_orders_count('wc-processing')
+#3 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-menus.php(167): wc_processing_order_count()
+#4 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(286): WC_Admin_Menus->menu_order_count('')
+#5 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\OSPanel\domains\WP\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\WP\wp-admin\admin-header.php(142): do_action('admin_head')
+#8 C:\OSP
+
+2018-07-20T14:48:45+00:00 CRITICAL Uncaught Exception: Invalid data store. in C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-data-store.php:107
+Stack trace:
+#0 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(136): WC_Data_Store->__construct('movies')
+#1 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\wc-order-functions.php(327): WC_Data_Store::load('movies')
+#2 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\wc-order-functions.php(301): wc_orders_count('wc-processing')
+#3 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-menus.php(167): wc_processing_order_count()
+#4 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(286): WC_Admin_Menus->menu_order_count('')
+#5 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\OSPanel\domains\WP\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\WP\wp-admin\admin-header.php(142): do_action('admin_head')
+#8 C:\OSP
+
+2018-07-20T14:59:50+00:00 CRITICAL Uncaught Exception: Invalid data store. in C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-data-store.php:107
+Stack trace:
+#0 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(136): WC_Data_Store->__construct('movies')
+#1 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\wc-order-functions.php(327): WC_Data_Store::load('movies')
+#2 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\wc-order-functions.php(301): wc_orders_count('wc-processing')
+#3 C:\OSPanel\domains\WP\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-menus.php(167): wc_processing_order_count()
+#4 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(286): WC_Admin_Menus->menu_order_count('')
+#5 C:\OSPanel\domains\WP\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\OSPanel\domains\WP\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\OSPanel\domains\WP\wp-admin\admin-header.php(142): do_action('admin_head')
+#8 C:\OSP
+

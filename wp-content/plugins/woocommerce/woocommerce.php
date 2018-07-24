@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WooCommerce
+ * Plugin Name: WooCommerce Movies
  * Plugin URI: https://woocommerce.com/
  * Description: An eCommerce toolkit that helps you sell anything. Beautifully.
  * Version: 3.4.3
