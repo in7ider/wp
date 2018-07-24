@@ -53,7 +53,7 @@ function movie_info_markup($object)
     ?>
         <div>
             <input name="subtitle" style="width:100%" id="subtitle" placeholder="Enter subtitle here" type="text" value="<?php echo get_post_meta($object->ID, "subtitle", true); ?>">
-            <input name="_price" id="_price" placeholder="Enter price here" type="number" value="<?php echo get_post_meta($object->ID, "_price", true); ?>">
+            <input name="price" id="price" placeholder="Enter price here" type="number" value="<?php echo get_post_meta($object->ID, "price", true); ?>">
         </div>
     <?php  
 }
