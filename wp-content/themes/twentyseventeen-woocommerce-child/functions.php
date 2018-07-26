@@ -118,6 +118,13 @@ add_filter('woocommerce_login_redirect', 'custom_wc_login_redirect', 10, 3);
   return $redirect;
 }
 
+//Registration redirect
+add_action('woocommerce_registration_redirect', 'custom_registration_redirect', 2);
+function custom_registration_redirect($redirect) {
+    $redirect = site_url() . '/favourites/';
+    return $redirect;
+}
+
 //Registration skype field
 
 function woocommerce_skype_register_fields() { ?>
