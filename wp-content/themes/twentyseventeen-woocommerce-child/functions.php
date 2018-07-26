@@ -102,16 +102,6 @@ function save_movie_meta_box($post_id, $post, $update)
 
 add_action("save_post", "save_movie_meta_box", 10, 3);
 
-//connect price
-
-add_filter('woocommerce_product_get_price','reigel_woocommerce_get_price',20,2);
-function reigel_woocommerce_get_price($price,$post){
-	if ($post->post->post_type === 'movies')
-		$price = get_post_meta($post->id, "price", true);
-	return $price;
-}
-
-
 //Add checkout redirect
 function checkout_redirect_checkout_add_cart( $url ) {
     $url = get_permalink( get_option( 'woocommerce_checkout_page_id' ) ); 
@@ -234,3 +224,21 @@ function rei_add_to_cart_button($content){
 	}
 }
 
+//connect price
+
+
+
+add_filter('woocommerce_product_get_price', 'get_ws_price', 10, 2);
+
+function get_ws_price($price, $product){
+
+    $id = $product->get_id();
+    $post_type = get_post_type( $id );
+	if ('movies' !== $post_type ){
+        return; 
+    } else {
+	    $price = get_post_meta($id, "price", true);
+        return $price;
+    }
+
+}
